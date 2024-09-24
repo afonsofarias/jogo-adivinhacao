@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Jogo de Adivinhação</h2>
+        <p>{{ mensagem }}</p>
+        <form method="POST">
+            <input type="number" name="chute" placeholder="Digite seu chute" required>
+            <button type="submit">Chutar</button>
+        </form>
+        <p>Tentativas restantes: {{ session['tentativas_restantes'] }}</p>
+        <a class="new" href="/novo_jogo">Novo Jogo</a>
+    </div>
+</body>
+</html>
