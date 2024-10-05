@@ -1,18 +1,22 @@
 
-<div class="container">
-  <!-- Informações do autor -->
-  <div class="author-info">
-    <h2>Sobre o autor:</h2>
-    <a href="https://github.com/afonsofarias" target="_blank" class="icon-link">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="icon">
-    </a>
-    <a href="https://www.linkedin.com/in/afonso-j-m-farias/" target="_blank" class="icon-link">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn" class="icon">
-    </a>
-  </div>
-
-  <!-- Jogo (mantendo o conteúdo existente do jogo) -->
-  <div class="game">
-    <!-- Coloque o conteúdo HTML do jogo aqui -->
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Jogo de Adivinhação</h2>
+        <p>{{ mensagem }}</p>
+        <form method="POST">
+            <input type="number" name="chute" placeholder="Digite seu chute" required>
+            <button type="submit">Chutar</button>
+        </form>
+        <p>Tentativas restantes: {{ session['tentativas_restantes'] }}</p>
+        <a class="new" href="/novo_jogo">Novo Jogo</a>
+    </div> 
+</body>
+</html>
