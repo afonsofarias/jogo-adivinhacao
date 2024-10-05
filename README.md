@@ -1,5 +1,5 @@
+
 # Jogo de Adivinhação em Python com uso de Flask
-## [Link Hospedagem Vercel](https://jogo-adivinhacao-incode.vercel.app/)
 
 
 ## 📝 Descrição

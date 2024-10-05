@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -61,10 +62,6 @@ button:active {
 .new:hover {
     background-color:rgb(90, 204, 166);
     transition: 0.4s;
-    display: block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #007BFF;
 }
 
 .new:active {
@@ -73,13 +70,24 @@ button:active {
     transition: 0.2s;
 }
 
+a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+}
 
-.info {
+/* Estilos específicos para os ícones dos links */
+.icon-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.author-info {
   text-align: center;
   margin-top: 20px;
 }
 
-.info .icon {
+.author-info .icon {
   width: 40px;
   height: 40px;
   margin: 0 10px;
