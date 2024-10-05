@@ -1,90 +1,28 @@
 
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('./images/bg.png');
-    background-size: cover;       
-    background-repeat: no-repeat;  
-    background-position: center;   
-    background-attachment: fixed;
-    background-color: #f0f0f0;
+/* Container para dividir a tela em duas colunas */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
 
-.container {
-    text-align: center;
-    background-color: #ffffffd5;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
+/* Estilos para a coluna da esquerda (informações do autor) */
+.author-info {
+  width: 50%;
+  text-align: left;
+  padding: 20px;
 }
 
-input {
-    padding: 10px;
-    font-size: 16px;
-    width: 200px;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    background-color:aquamarine;
-    border-radius: 5px;
-    transition: 0.4s;
-}
-
-button:hover {
-    background-color:rgb(23, 173, 123);
-    transition: 0.4s;
-}
-
-button:active {
-    background-color:rgb(153, 177, 169);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
-    transition: 0.2s;
-}
-
-.new {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 10px;
-    color: darkmagenta;
-    background-color:rgb(22, 204, 143);
-    border-radius: 25px;
-    transition: 0.4s;
-}
-
-.new:hover {
-    background-color:rgb(90, 204, 166);
-    transition: 0.4s;
-}
-
-.new:active {
-    background-color:rgb(33, 122, 93);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.589);
-    transition: 0.2s;
-}
-
-a {
-    display: block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #007BFF;
+/* Estilos para a coluna da direita (jogo) */
+.game {
+  width: 50%;
+  padding: 20px;
 }
 
 /* Estilos específicos para os ícones dos links */
 .icon-link {
   text-decoration: none; /* Remove underline */
-}
-
-.author-info {
-  text-align: center;
-  margin-top: 20px;
 }
 
 .author-info .icon {
