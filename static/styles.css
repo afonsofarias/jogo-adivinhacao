@@ -61,6 +61,10 @@ button:active {
 .new:hover {
     background-color:rgb(90, 204, 166);
     transition: 0.4s;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
 }
 
 .new:active {
@@ -69,12 +73,6 @@ button:active {
     transition: 0.2s;
 }
 
-.a {
-    display: block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #007BFF;
-}
 
 .info {
   text-align: center;
