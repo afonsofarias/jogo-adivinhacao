@@ -31,3 +31,34 @@
   margin: 0 10px;
   vertical-align: middle;
 }
+
+/* Container principal para organizar autor e jogo */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Estilos para a coluna da esquerda (informações do autor) */
+.author-info {
+  width: 200px; /* Largura fixa */
+  padding: 20px;
+  background-color: #f4f4f4; /* Cor de fundo para diferenciar */
+}
+
+/* Estilos para a coluna da direita (jogo) */
+.game {
+  flex-grow: 1; /* Ocupa o restante do espaço */
+  padding: 20px;
+}
+
+/* Estilos específicos para os ícones dos links */
+.icon-link {
+  text-decoration: none; /* Remove underline */
+}
+
+.author-info .icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
